@@ -1,0 +1,23 @@
+{
+  "name": "coin-dashboard",
+  "version": "0.1",
+  "description": "a fiction coin-dashboard app",
+  "main": "index.html",
+  "repository": "https://iamruhul.github.io/dashboard",
+  "author": "iamruhul <ruhulamin3482@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-css": "^3.9.4",
+    "gulp-htmlclean": "^2.7.22",
+    "gulp-inject": "^4.3.2",
+    "gulp-sass": "^4.0.1",
+    "browser-sync": "^2.24.4"
+  },
+  "scripts": {
+    "start": "gulp serve"
+  }
+}
