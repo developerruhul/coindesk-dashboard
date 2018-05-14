@@ -1,0 +1,22 @@
+// ======================================================================
+// MEDIA QUERY MANAGER
+// ======================================================================
+@mixin mq($size) {
+  @if $size == "phone" {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  } @else if $size == "tab-p" {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  } @else if $size == "tab-l" {
+    @media (max-width: 75em) {
+      @content;
+    }
+  } @else if $size == "huge" {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

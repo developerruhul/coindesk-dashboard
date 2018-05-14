@@ -1,3 +1,14 @@
-html{
-    background: rgb(3, 124, 124);
-}
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+
+// base
+@import "./base/base";
+
+// pages
+@import "./pages/home";
+
+// layout
+@import "./layout/sidebar";
+
+// component
