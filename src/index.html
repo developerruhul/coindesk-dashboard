@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Welcome to Coin Desk</title>
-    <!-- TODO: ADD A FAVICON ICON -->
-    <link rel="shortcut icon" href="./images/placeholder.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./images/png/brand-icon.png" type="image/x-icon">
 
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Nunito Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,500,600,700,900,800" rel="stylesheet">
 </head>
 
 <body>
@@ -30,7 +29,52 @@
        SIDENAV START
     ============= -->
     <section class="sidebar">
-        SIDEBAR
+        <a href="/" class="sidebar__brand">
+            <img class="sidebar__brand-logo" src="./images/png/brand-icon.png" alt="CoinDesk logo">
+            <div class="sidebar__brand-name">CoinDesk</div>
+        </a>
+
+        <nav class="sidebar__nav">
+            <!-- ITEM 1 -->
+            <a class="sidebar__nav-item sidebar__nav-item--active">
+                <svg class="sidebar__nav-icon">
+                    <use href="./images/sprite.svg#icon-dashboard"></use>
+                </svg>
+                <span class="sidebar__nav-name">Dashboard</span>
+            </a>
+
+            <!-- ITEM 2 -->
+            <a class="sidebar__nav-item">
+                <svg class="sidebar__nav-icon">
+                    <use href="./images/sprite.svg#icon-shopping-cart"></use>
+                </svg>
+                <span class="sidebar__nav-name">Buy / Sell</span>
+            </a>
+
+            <!-- ITEM 3 -->
+            <a class="sidebar__nav-item">
+                <svg class="sidebar__nav-icon">
+                    <use href="./images/sprite.svg#icon-user"></use>
+                </svg>
+                <span class="sidebar__nav-name">Accounts</span>
+            </a>
+
+            <!-- ITEM 4 -->
+            <a class="sidebar__nav-item">
+                <svg class="sidebar__nav-icon">
+                    <use href="./images/sprite.svg#icon-paperplane"></use>
+                </svg>
+                <span class="sidebar__nav-name">Messages</span>
+            </a>
+
+            <!-- ITEM 5 -->
+            <a class="sidebar__nav-item">
+                <svg class="sidebar__nav-icon">
+                    <use href="./images/sprite.svg#icon-settings"></use>
+                </svg>
+                <span class="sidebar__nav-name">Tools</span>
+            </a>
+        </nav>
     </section>
     <!-- =============
        SIDENAV END

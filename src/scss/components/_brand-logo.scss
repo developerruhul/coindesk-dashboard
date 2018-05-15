@@ -1,0 +1,16 @@
+.sidebar__brand {
+  &-logo {
+    width: 5.7rem;
+    display: inline-block;
+
+    border-radius: 50%;
+    box-shadow: 0px 0px 0 3px $color-sidebar, 0px 0px 0 5px #191f5d;
+  }
+
+  &-name {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #0c1254;
+    padding-top: 1rem;
+  }
+}

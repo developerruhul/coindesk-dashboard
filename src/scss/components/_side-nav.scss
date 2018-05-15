@@ -1,0 +1,29 @@
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 3rem;
+  }
+
+  &-item--active &-icon,
+  &-item:hover &-icon {
+    fill: $color-primary;
+  }
+
+  &-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+    transition: all 0.1s;
+    fill: #B4B9CA;
+  }
+
+  &-name {
+    margin-left: 2rem;
+    color: #505668;
+  }
+}

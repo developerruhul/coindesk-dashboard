@@ -6,21 +6,27 @@
   box-sizing: inherit;
 }
 
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 html {
   // this defines the size of 1rem
   font-size: 62.5%;
 
-  @include mq(tab-l) {
-    font-size: 56.25%;
-  }
+  // @include mq(tab-l) {
+  //   font-size: 56.25%;
+  // }
 
-  @include mq(tab-p) {
-    font-size: 50%;
-  }
+  // @include mq(tab-p) {
+  //   font-size: 50%;
+  // }
 
-  @include mq(huge) {
-    font-size: 75%;
-  }
+  // @include mq(huge) {
+  //   font-size: 75%;
+  // }
 }
 
 body {
