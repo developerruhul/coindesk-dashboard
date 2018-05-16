@@ -35,7 +35,7 @@ And  then run
 gulp
 ```
 
-The server should start on port 3000 . [localhost](localhost:3000)
+The server should start on port 3000.
 
 
 
