@@ -1,0 +1,11 @@
+body {
+  display: flex;
+  align-items: stretch;
+  background-color: $color-body;
+}
+
+.main-content {
+  width: 100%;
+  height: auto;
+  margin: 4rem;
+}

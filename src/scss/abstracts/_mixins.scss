@@ -20,3 +20,9 @@
     }
   }
 }
+
+// coin-logo.scss => coin logo linear-gradient
+@mixin linear($color) {
+  background: linear-gradient(to bottom, $color, darken($color, 15%));
+  box-shadow: 1px 6px 10px rgba($color, 0.432);
+}
