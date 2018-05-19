@@ -6,9 +6,12 @@ body {
 
 .main-content {
   width: 100%;
-  height: auto;
   max-width: 120rem;
   margin: 0 auto;
+
+  // TEST
+  height: 100vh;
+  overflow: auto;
 
   padding: 4rem 3.5rem;
   display: flex;
