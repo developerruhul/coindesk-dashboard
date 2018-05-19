@@ -1,0 +1,73 @@
+.share-card {
+  background: rgb(255, 255, 255);
+  box-shadow: $mild-shadow;
+  border-radius: 1.2rem;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0px 84px, 0 0;
+
+  &--bitcoin {
+    background-image: url(../../images/png/bitcoin-share.png),
+      linear-gradient(to top, $color-secondary, white 35%);
+  }
+
+  &--etherum {
+    background-image: url(../../images/png/etherum-share.png),
+      linear-gradient(to top, $color-primary, white 35%);
+  }
+
+  &__brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    width: 4rem;
+    padding: 0.8rem 1.1rem;
+    height: 4rem;
+    border-radius: 1rem;
+  }
+
+  &__title-box {
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+
+  &__title {
+    color: $color-text-primary;
+  }
+
+  &__title--short {
+    color: $color-text-secondary;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
+  // current share market (:
+  &__current-share {
+    letter-spacing: 1px;
+    font-weight: 800;
+    text-align: right;
+  }
+
+  &__balance {
+    font-size: 1.3rem;
+  }
+
+  &--etherum &__balance {
+    color: $color-primary;
+  }
+
+  &--bitcoin &__balance {
+    color: $color-secondary;
+  }
+
+  &__share {
+    font-size: 1.3rem;
+    color: $color-text-primary;
+    margin-top: 0.5rem;
+  }
+}

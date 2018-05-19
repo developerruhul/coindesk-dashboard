@@ -1,6 +1,7 @@
 // abstracts
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+@import "./abstracts/utility";
 
 // base
 @import "./base/base";
@@ -18,3 +19,4 @@
 @import "./components/visa";
 @import "./components/coin-title-box";
 @import "./components/coin-logo";
+@import "./components/share";

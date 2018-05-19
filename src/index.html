@@ -84,11 +84,11 @@
        MAIN CONTENT START
     ============= -->
     <main class="main-content">
-        <section class="coins">
-            <article class="coins__title-box">
+        <div class="coins">
+            <section class="coins__title-box">
                 <h1 class="coins__title">Coins</h1>
                 <h2 class="coins__secondary-title">Choose your favourite coin and see live value</h2>
-            </article>
+            </section>
 
             <section class="coins__logo-box">
                 <img class="coins__logo coins__logo--bitcoin" src="./images/png/bitcoin.png" alt="bitcoin">
@@ -101,19 +101,50 @@
                 </svg>
             </section>
 
-            <section class="coins__share">
-                TWO CARDS ABOUT COIN SHARE GOES HERE
+            <div class="coins__share-box">
+                <section class="share-card share-card--bitcoin">
+                    <div class="pull-content-to-flex-start">
+                        <div class="share-card__brand">
+                            <img class="share-card__logo coins__logo coins__logo--bitcoin" src="./images/png/bitcoin.png" alt="bitcoin logo">
+                            <div class="share-card__title-box">
+                                <div class="share-card__title">Bitcoin</div>
+                                <div class="share-card__title--short">BTC</div>
+                            </div>
+                        </div>
+                        <div class="share-card__current-share">
+                            <div class="share-card__balance">$8513.88</div>
+                            <div class="share-card__share">&Downarrow; 8.45</div>
+                        </div>
+                    </div>
+                </section>
 
-                <section class="visa">
+                <section class="share-card share-card--etherum">
+                    <div class="pull-content-to-flex-start">
+                        <div class="share-card__brand">
+                            <img class="share-card__logo coins__logo coins__logo--etherum" src="./images/png/etherum.png" alt="etherum logo">
+                            <div class="share-card__title-box">
+                                <div class="share-card__title">Etherum</div>
+                                <div class="share-card__title--short">ETH</div>
+                            </div>
+                        </div>
+                        <div class="share-card__current-share">
+                            <div class="share-card__balance">$8513.88</div>
+                            <div class="share-card__share">&Uparrow; 8.45</div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class="share-card visa">
                     VISA
                 </section>
-            </section>
+            </div>
 
-        </section>
+        </div>
 
-        <section class="statistics">
+        <div class="statistics">
             COINS STATISTICS
-        </section>
+        </div>
     </main>
     <!-- =============
        MAIN CONTENT END

@@ -14,8 +14,33 @@
   &__logo-box {
     width: 100%;
     margin-top: 4rem;
+    margin-bottom: 2rem;
     display: flex;
   }
-  &__share {
+
+  &__share-box {
+    display: flex;
+    width: 100%;
+
+    .share-card {
+      width: 30%;
+      height: 20rem;
+
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .pull-content-to-flex-start {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 2rem;
+    }
+
+    .share-card:nth-child(2) {
+      margin-left: 3rem;
+      margin-right: auto;
+    }
   }
 }

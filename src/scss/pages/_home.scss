@@ -8,4 +8,14 @@ body {
   width: 100%;
   height: auto;
   margin: 4rem;
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 0 0 100%;
+  }
+}
+
+.statistics {
 }
