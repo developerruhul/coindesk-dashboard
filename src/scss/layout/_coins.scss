@@ -18,29 +18,42 @@
     display: flex;
   }
 
-  &__share-box {
+  .share-box {
     display: flex;
     width: 100%;
+    align-items: center;
+  }
 
-    .share-card {
-      width: 30%;
-      height: 20rem;
+  .share-card {
+    width: 30%;
+    height: 20rem;
+    align-items: flex-start;
+    display: flex;
 
-      display: flex;
-      align-items: flex-start;
-    }
-
-    .pull-content-to-flex-start {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-      padding: 2rem;
-    }
-
-    .share-card:nth-child(2) {
-      margin-left: 3rem;
+    &:nth-child(2) {
+      margin-left: 2rem;
       margin-right: auto;
     }
+  }
+
+  .pull-content-to-flex-start {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .share-box__visa-box {
+    width: 32%;
+    height: auto;
+    margin-top: -5rem;
+  }
+
+  .visa-box__title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: $color-text-primary;
+    margin-bottom: 3rem;
   }
 }
