@@ -12,6 +12,7 @@
 // layout
 @import "./layout/sidebar";
 @import "./layout/coins";
+@import "./layout/task";
 
 // component
 @import "./components/side-nav";
@@ -20,3 +21,5 @@
 @import "./components/coin-logo";
 @import "./components/share";
 @import "./components/visa";
+@import "./components/operation-table";
+@import "./components/stats";

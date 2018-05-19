@@ -1,0 +1,35 @@
+.task {
+  height: auto;
+  margin-top: 6rem;
+
+  // test
+  border: 1px solid;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  &__operations {
+    width: 38%;
+  }
+
+  .operation-card {
+    background: #000;
+    height: 20rem;
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: $color-text-primary;
+  }
+
+  &__statistics {
+    width: 58%;
+  }
+
+  .statistics-card {
+    background: #000;
+    height: 20rem;
+  }
+}
