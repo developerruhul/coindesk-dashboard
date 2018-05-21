@@ -4,10 +4,11 @@
 
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
 
   &__operations {
     width: 38%;
+    background: #000;
   }
 
   &__title {
@@ -16,55 +17,9 @@
     color: $color-text-primary;
   }
 
-  .operation-card {
-    height: auto;
-    box-shadow: $mild-shadow;
-    border-radius: 1.3rem;
-    list-style: none;
-    padding: 2rem 1.7rem;
-    background-color: white;
-
-    &__operation {
-      width: 100%;
-      height: 5rem;
-      display: flex;
-      align-items: center;
-    }
-
-    &__operation:not(:first-child) {
-      margin-top: 1rem;
-    }
-
-    &__operation-details {
-      margin-right: auto;
-      margin-left: 2rem;
-    }
-
-    &__operation-name {
-      font-weight: 800;
-      font-size: 1.3rem;
-      letter-spacing: 0.5px;
-      color: $color-text-primary;
-    }
-
-    &__operation-date {
-      color: rgb(204, 204, 204);
-      font-size: 1.1rem;
-      font-weight: 800;
-    }
-
-    &__operation-amount {
-      font-size: 1.4rem;
-      font-weight: 800;
-    }
-  }
-
   &__statistics {
     width: 58%;
-  }
-
-  .statistics-card {
-    background: rgb(69, 221, 241);
-    height: 33rem;
+    display: flex;
+    flex-direction: column;
   }
 }

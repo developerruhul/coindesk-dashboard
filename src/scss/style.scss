@@ -13,6 +13,8 @@
 @import "./layout/sidebar";
 @import "./layout/coins";
 @import "./layout/task";
+@import "./layout/stats";
+@import "./layout/recent-operation-card";
 
 // component
 @import "./components/side-nav";
@@ -22,4 +24,5 @@
 @import "./components/share";
 @import "./components/visa";
 @import "./components/operation-table";
-@import "./components/stats";
+@import "./components/statistics-card";
+
