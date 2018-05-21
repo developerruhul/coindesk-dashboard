@@ -1,8 +1,11 @@
 .statistics-card {
-  background: rgb(255, 255, 255);
+  width: 100%;
   height: 100%;
   padding: 1.5rem 2rem;
+  border-radius: 1.3rem;
+  background: rgb(255, 255, 255);
+  box-shadow: $mild-shadow;
 
-  &__switch {
-  }
+  display: flex;
+  align-items: baseline;
 }

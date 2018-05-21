@@ -1,0 +1,26 @@
+.switch-button {
+  @include linear($color-primary);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 800;
+
+  padding: 0.3rem;
+  display: inline-flex;
+  border-radius: 100px;
+
+  &__input {
+    width: 0;
+    height: 0;
+  }
+
+  &__label {
+    border-radius: 100px;
+    padding: 0.5rem 2.3rem;
+    transition: all 0.2s;
+  }
+
+  &__input:checked + label {
+    background: white;
+    color: $color-primary;
+  }
+}
