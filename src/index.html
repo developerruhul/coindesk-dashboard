@@ -99,26 +99,55 @@
             </section>
 
             <section class="coins__logo-box">
-                <img class="coins__logo coins__logo--bitcoin" src="./images/png/bitcoin.png" alt="bitcoin">
-                <img class="coins__logo coins__logo--etherum" src="./images/png/etherum.png" alt="etherum">
-                <img class="coins__logo" src="./images/png/litcoin.png" alt="litcoin">
-                <img class="coins__logo" src="./images/png/monero.png" alt="monero">
-                <img class="coins__logo" src="./images/png/dash.png" alt="dash">
-                <svg class="coins__logo coins__logo--add">
-                    <use href="./images/sprite.svg#icon-add"></use>
-                </svg>
+                <div class="coins__logo-wrapper coins__logo-wrapper--bitcoin">
+                    <svg class="coins__logo">
+                        <use href="./images/sprite.svg#icon-bitcoin"></use>
+                    </svg>
+                </div>
+                <div class="coins__logo-wrapper coins__logo-wrapper--etherum">
+                    <svg class="coins__logo">
+                        <use href="./images/sprite.svg#icon-ethereum"></use>
+                    </svg>
+                </div>
+
+                <div class="coins__logo-wrapper coins__logo-wrapper--litcoin">
+                    <svg class="coins__logo">
+                        <use href="./images/sprite.svg#icon-litcoin"></use>
+                    </svg>
+                </div>
+                <div class="coins__logo-wrapper coins__logo-wrapper--monero">
+                    <svg class="coins__logo">
+                        <use href="./images/sprite.svg#icon-monero"></use>
+                    </svg>
+                </div>
+                <div class="coins__logo-wrapper coins__logo-wrapper--dash">
+                    <svg class="coins__logo">
+                        <use href="./images/sprite.svg#icon-dash"></use>
+                    </svg>
+                </div>
+                <div class="coins__logo-wrapper coins__logo-wrapper--add">
+                    <svg class="coins__logo">
+                        <use href="./images/sprite.svg#icon-add"></use>
+                    </svg>
+                </div>
             </section>
 
+            <!-- STOCK MARKET CARDS -->
             <div class="share-box">
                 <section class="share-card share-card--bitcoin">
                     <div class="pull-content-to-flex-start">
                         <div class="share-card__brand">
-                            <img class="share-card__logo coins__logo coins__logo--bitcoin" src="./images/png/bitcoin.png" alt="bitcoin logo">
+                            <div class="coins__logo-wrapper coins__logo-wrapper--bitcoin share-card__logo">
+                                <svg class="coins__logo">
+                                    <use href="./images/sprite.svg#icon-bitcoin"></use>
+                                </svg>
+                            </div>
                             <div class="share-card__title-box">
                                 <div class="share-card__title">Bitcoin</div>
                                 <div class="share-card__title--short">BTC</div>
                             </div>
                         </div>
+
                         <div class="share-card__current-share">
                             <div class="share-card__balance">$8513.88</div>
                             <div class="share-card__share">&Downarrow; 8.45</div>
@@ -129,7 +158,11 @@
                 <section class="share-card share-card--etherum">
                     <div class="pull-content-to-flex-start">
                         <div class="share-card__brand">
-                            <img class="share-card__logo coins__logo coins__logo--etherum" src="./images/png/etherum.png" alt="etherum logo">
+                            <div class="coins__logo-wrapper coins__logo-wrapper--etherum share-card__logo">
+                                <svg class="coins__logo">
+                                    <use href="./images/sprite.svg#icon-ethereum"></use>
+                                </svg>
+                            </div>
                             <div class="share-card__title-box">
                                 <div class="share-card__title">Etherum</div>
                                 <div class="share-card__title--short">ETH</div>
@@ -189,7 +222,14 @@
                 <!-- RECENT OPERATION CARD -->
                 <ul class="operation-card mt-average">
                     <li class="operation-card__operation">
-                        <img class="share-card__logo coins__logo--bitcoin" src="./images/png/bitcoin.png" alt="bitcoin logo">
+
+                        <!-- share-card__logo CLASS MAKES THE LOGO SMALL  -->
+
+                        <div class="coins__logo-wrapper coins__logo-wrapper--bitcoin  share-card__logo">
+                            <svg class="coins__logo">
+                                <use href="./images/sprite.svg#icon-bitcoin"></use>
+                            </svg>
+                        </div>
                         <div class="operation-card__operation-details">
                             <div class="operation-card__operation-name">Bitcoin Purchased</div>
                             <div class="operation-card__operation-date">Yesterday 2:23 pm</div>
@@ -198,7 +238,11 @@
                     </li>
 
                     <li class="operation-card__operation">
-                        <img class="share-card__logo coins__logo--etherum" src="./images/png/etherum.png" alt="etherum logo">
+                        <div class="coins__logo-wrapper coins__logo-wrapper--etherum share-card__logo">
+                            <svg class="coins__logo">
+                                <use href="./images/sprite.svg#icon-ethereum"></use>
+                            </svg>
+                        </div>
                         <div class="operation-card__operation-details">
                             <div class="operation-card__operation-name">1000 Etherum Purchased</div>
                             <div class="operation-card__operation-date">Friday 2:23 pm</div>
@@ -207,7 +251,12 @@
                     </li>
 
                     <li class="operation-card__operation">
-                        <img class="share-card__logo coins__logo" src="./images/png/litcoin.png" alt="litcoin logo">
+                        <div class="coins__logo-wrapper coins__logo-wrapper--litcoin share-card__logo">
+                            <svg class="coins__logo">
+                                <use href="./images/sprite.svg#icon-litcoin"></use>
+                            </svg>
+                        </div>
+
                         <div class="operation-card__operation-details">
                             <div class="operation-card__operation-name">Litcoin Purchased</div>
                             <div class="operation-card__operation-date">Yesterday 2:23 pm</div>
@@ -216,7 +265,11 @@
                     </li>
 
                     <li class="operation-card__operation">
-                        <img class="share-card__logo coins__logo--etherum" src="./images/png/etherum.png" alt="etherum logo">
+                        <div class="coins__logo-wrapper coins__logo-wrapper--monero share-card__logo">
+                            <svg class="coins__logo">
+                                <use href="./images/sprite.svg#icon-monero"></use>
+                            </svg>
+                        </div>
                         <div class="operation-card__operation-details">
                             <div class="operation-card__operation-name">Etherum Purchased</div>
                             <div class="operation-card__operation-date">Yesterday 2:23 pm</div>
@@ -225,7 +278,11 @@
                     </li>
 
                     <li class="operation-card__operation">
-                        <img class="share-card__logo coins__logo coins__logo--bitcoin" src="./images/png/bitcoin.png" alt="bitcoin logo">
+                        <div class="coins__logo-wrapper coins__logo-wrapper--bitcoin share-card__logo">
+                            <svg class="coins__logo">
+                                <use href="./images/sprite.svg#icon-bitcoin"></use>
+                            </svg>
+                        </div>
                         <div class="operation-card__operation-details">
                             <div class="operation-card__operation-name">Bitcoin Purchased</div>
                             <div class="operation-card__operation-date">Yesterday 2:23 pm</div>

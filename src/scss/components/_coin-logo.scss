@@ -1,32 +1,53 @@
 .coins {
-  &__logo-box {
-  }
+  &__logo-wrapper {
+    width: 5.3rem;
+    height: 5.2rem;
 
-  &__logo:not(:first-child) {
-    margin-left: 2rem;
+    background: #ffffff;
+    border-radius: 1.4rem;
+    box-shadow: $mild-shadow;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &:not(:first-child) {
+      margin-left: 2rem;
+    }
+
+    &--bitcoin {
+      fill: white;
+      @include linear($color-secondary, $color-secondary-dark);
+    }
+
+    &--etherum {
+      fill: white;
+      @include linear($color-primary, $color-primary-dark);
+    }
+
+    &--litcoin {
+      fill: $color-tertiary-dark;
+    }
+
+    &--monero {
+      fill: #fc9f74;
+    }
+
+    &--dash {
+      fill: #6629fa;
+    }
+
+    &--add {
+      box-shadow: none;
+      background: none;
+      border: 2px dotted $color-text-secondary;
+      padding: 1.3rem 1rem;
+      fill: $color-text-secondary;
+    }
   }
 
   &__logo {
-    width: 5.3rem;
-    height: 5.2rem;
-    background: #ffffff;
-    padding: 1.3rem 1.7rem;
-    border-radius: 1.4rem;
-    display: inline-block;
-    box-shadow: $mild-shadow;
-  }
-
-  &__logo--bitcoin {
-    @include linear($color-secondary, $color-secondary-dark);
-  }
-  &__logo--etherum {
-    @include linear($color-primary, $color-primary-dark);
-  }
-  &__logo--add {
-    box-shadow: none;
-    background: none;
-    border: 2px dotted $color-text-secondary;
-    padding: 1.3rem 1rem;
-    fill: $color-text-secondary;
+    height: 2.9rem;
+    width: 2.4rem;
   }
 }
