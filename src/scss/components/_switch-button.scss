@@ -1,5 +1,5 @@
 .switch-button {
-  @include linear($color-primary);
+  @include linear($color-primary, $color-primary-dark);
   color: white;
   font-size: 1.1rem;
   font-weight: 800;

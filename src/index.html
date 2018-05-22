@@ -18,9 +18,15 @@
     <!-- =============
        USER PROFILE START
     ============= -->
-    <!-- <section class="user-profile">
-        USER PROFILE
-    </section> -->
+    <section class="user-profile">
+        <div class="user-profile__bell-icon-wrapper">
+            <svg class="user-profile__bell-icon">
+                <use href="./images/sprite.svg#icon-bell"></use>
+            </svg>
+        </div>
+        <img class="user-profile__user-photo" src="https://scontent.fdac3-1.fna.fbcdn.net/v/t1.0-1/p100x100/26815089_1967973156856477_7825252843087156684_n.jpg?_nc_cat=0&_nc_eui2=AeGQtQQ9uNWq-1iHIAbyBpmiLt21MeVK2vp7kjrw_OIw11q83sS4aYENaK0Wb_EwllZjPHYBt2C3iGhSdSs69KXniVF_9t3Efpaj3kmoQL6xuQ&oh=d5737ebfde1a87554a53d1250b3d76f9&oe=5B91B7F5"
+            alt="User photo">
+    </section>
     <!-- =============
        USER PROFILE END
     ============= -->
@@ -28,54 +34,56 @@
     <!-- =============
        SIDENAV START
     ============= -->
-    <section class="sidebar">
-        <a href="/" class="sidebar__brand">
-            <img class="sidebar__brand-logo" src="./images/png/brand-icon.png" alt="CoinDesk logo">
-            <div class="sidebar__brand-name">CoinDesk</div>
-        </a>
-
-        <nav class="sidebar__nav">
-            <!-- ITEM 1 -->
-            <a class="sidebar__nav-item sidebar__nav-item--active">
-                <svg class="sidebar__nav-icon">
-                    <use href="./images/sprite.svg#icon-dashboard"></use>
-                </svg>
-                <span class="sidebar__nav-name">Dashboard</span>
+    <div class="sidebar-wrapper">
+        <section class="sidebar">
+            <a href="/" class="sidebar__brand">
+                <img class="sidebar__brand-logo" src="./images/png/brand-icon.png" alt="CoinDesk logo">
+                <div class="sidebar__brand-name">CoinDesk</div>
             </a>
 
-            <!-- ITEM 2 -->
-            <a class="sidebar__nav-item">
-                <svg class="sidebar__nav-icon">
-                    <use href="./images/sprite.svg#icon-shopping-cart"></use>
-                </svg>
-                <span class="sidebar__nav-name">Buy / Sell</span>
-            </a>
+            <nav class="sidebar__nav">
+                <!-- ITEM 1 -->
+                <a class="sidebar__nav-item sidebar__nav-item--active">
+                    <svg class="sidebar__nav-icon">
+                        <use href="./images/sprite.svg#icon-dashboard"></use>
+                    </svg>
+                    <span class="sidebar__nav-name">Dashboard</span>
+                </a>
 
-            <!-- ITEM 3 -->
-            <a class="sidebar__nav-item">
-                <svg class="sidebar__nav-icon">
-                    <use href="./images/sprite.svg#icon-user"></use>
-                </svg>
-                <span class="sidebar__nav-name">Accounts</span>
-            </a>
+                <!-- ITEM 2 -->
+                <a class="sidebar__nav-item">
+                    <svg class="sidebar__nav-icon">
+                        <use href="./images/sprite.svg#icon-shopping-cart"></use>
+                    </svg>
+                    <span class="sidebar__nav-name">Buy / Sell</span>
+                </a>
 
-            <!-- ITEM 4 -->
-            <a class="sidebar__nav-item">
-                <svg class="sidebar__nav-icon">
-                    <use href="./images/sprite.svg#icon-paperplane"></use>
-                </svg>
-                <span class="sidebar__nav-name">Messages</span>
-            </a>
+                <!-- ITEM 3 -->
+                <a class="sidebar__nav-item">
+                    <svg class="sidebar__nav-icon">
+                        <use href="./images/sprite.svg#icon-user"></use>
+                    </svg>
+                    <span class="sidebar__nav-name">Accounts</span>
+                </a>
 
-            <!-- ITEM 5 -->
-            <a class="sidebar__nav-item">
-                <svg class="sidebar__nav-icon">
-                    <use href="./images/sprite.svg#icon-settings"></use>
-                </svg>
-                <span class="sidebar__nav-name">Tools</span>
-            </a>
-        </nav>
-    </section>
+                <!-- ITEM 4 -->
+                <a class="sidebar__nav-item">
+                    <svg class="sidebar__nav-icon">
+                        <use href="./images/sprite.svg#icon-paperplane"></use>
+                    </svg>
+                    <span class="sidebar__nav-name">Messages</span>
+                </a>
+
+                <!-- ITEM 5 -->
+                <a class="sidebar__nav-item">
+                    <svg class="sidebar__nav-icon">
+                        <use href="./images/sprite.svg#icon-settings"></use>
+                    </svg>
+                    <span class="sidebar__nav-name">Tools</span>
+                </a>
+            </nav>
+        </section>
+    </div>
     <!-- =============
        SIDENAV END
     ============= -->

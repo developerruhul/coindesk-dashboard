@@ -1,6 +1,7 @@
 .sidebar {
-  flex: 0 0 24.5rem;
-  min-height: 100vh;
+  height: 100%;
+  width: 24rem;
+  position: fixed;
 
   background-color: $color-sidebar;
   border-right: 1px solid #e8e8e8;
@@ -19,6 +20,6 @@
   &__nav {
     font-size: 1.4rem;
     font-weight: 700;
-    padding-left: 3rem;
+    padding-left: 2rem;
   }
 }

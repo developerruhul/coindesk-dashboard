@@ -17,10 +17,10 @@
   }
 
   &__logo--bitcoin {
-    @include linear($color-secondary);
+    @include linear($color-secondary, $color-secondary-dark);
   }
   &__logo--etherum {
-    @include linear($color-primary);
+    @include linear($color-primary, $color-primary-dark);
   }
   &__logo--add {
     box-shadow: none;

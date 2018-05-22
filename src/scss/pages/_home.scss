@@ -9,11 +9,7 @@ body {
   max-width: 120rem;
   margin: 0 auto;
 
-  // TEST
-  height: 100vh;
-  overflow: auto;
-
-  padding: 4rem 3.5rem;
+  padding: 4rem 3.5rem 10rem;
   display: flex;
   align-content: space-between;
   flex-wrap: wrap;
@@ -21,4 +17,9 @@ body {
   & > * {
     flex: 0 0 100%;
   }
+}
+
+.sidebar-wrapper {
+  position: relative;
+  flex: 0 0 24rem;
 }

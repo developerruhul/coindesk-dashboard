@@ -1,0 +1,42 @@
+.user-profile {
+  position: absolute;
+  top: 3rem;
+  right: 3.5rem;
+
+  display: flex;
+  align-items: center;
+
+  &__bell-icon-wrapper {
+    margin-right: 3.5rem;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+
+      background: linear-gradient(
+        135deg,
+        $color-secondary,
+        $color-secondary-dark
+      );
+
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
+
+  &__bell-icon {
+    width: 2.5rem;
+    fill: #727272;
+    height: 2.5rem;
+  }
+
+  &__user-photo {
+    border-radius: 1.4rem;
+    width: 4.5rem;
+    box-shadow: 0 6px 1rem -1px #9e804a4d;
+  }
+}
