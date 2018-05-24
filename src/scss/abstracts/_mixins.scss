@@ -1,23 +1,6 @@
-// ======================================================================
-// MEDIA QUERY MANAGER
-// ======================================================================
 @mixin mq($size) {
-  @if $size == "phone" {
-    @media (max-width: 37.5em) {
-      @content;
-    }
-  } @else if $size == "tab-p" {
-    @media (max-width: 56.25em) {
-      @content;
-    }
-  } @else if $size == "tab-l" {
-    @media (max-width: 75em) {
-      @content;
-    }
-  } @else if $size == "huge" {
-    @media (min-width: 112.5em) {
-      @content;
-    }
+  @media only screen and (max-width: $size) {
+    @content;
   }
 }
 
@@ -26,3 +9,4 @@
   background: linear-gradient(to bottom, $color, $dark-color);
   box-shadow: 1px 6px 10px rgba($dark-color, 0.432);
 }
+
