@@ -9,8 +9,7 @@
   border-radius: 100px;
 
   &__input {
-    width: 0;
-    height: 0;
+    display: none;
   }
 
   &__label {
