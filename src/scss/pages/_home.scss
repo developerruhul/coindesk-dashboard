@@ -17,14 +17,45 @@ body {
   & > * {
     flex: 0 0 100%;
   }
+
+  @include mq($bp-large) {
+    padding: 13rem 3rem 10rem;
+  }
 }
 
 .sidebar-wrapper {
   position: relative;
   flex: 0 0 24rem;
-  transition: 0.3s all;
 
   @include mq($bp-large) {
-    margin-left: -24rem;
+    flex: none;
+  }
+}
+
+//////////////////////////////////////////////////
+// MOBILE MENU
+/////////////////////////////////////////////////
+.mobile-menu {
+  display: none;
+
+  @include mq($bp-large) {
+    display: initial;
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem;
+
+    cursor: pointer; //TODO: change this in touchscreen
+
+    @include linear($color-primary, $color-primary-dark);
+
+    &:active {
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.24);
+    }
+
+    &__icon {
+    }
   }
 }

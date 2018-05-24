@@ -98,7 +98,22 @@
   });
 
   /*===============================================
-
+    MOBILE MENU
   */
+  var mobileMenu = document.querySelector(".mobile-menu");
+  var sidebar = document.querySelector(".sidebar");
+  var closeSideBar = document.querySelector(".sidebar__hide");
+
+  mobileMenu.addEventListener("click", sidebarFunc);
+
+  closeSideBar.addEventListener("click", sidebarFunc);
+
+  function sidebarFunc() {
+    sidebar.classList.toggle("active");
+  }
+  /*===============================================
+    MOBILE MENU ENDS
+  */
+
 
 })();
