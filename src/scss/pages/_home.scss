@@ -22,4 +22,9 @@ body {
 .sidebar-wrapper {
   position: relative;
   flex: 0 0 24rem;
+  transition: 0.3s all;
+
+  @include mq($bp-large) {
+    margin-left: -24rem;
+  }
 }
