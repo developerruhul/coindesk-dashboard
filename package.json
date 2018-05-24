@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "browser-sync": "^2.24.4",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
@@ -15,7 +16,7 @@
     "gulp-htmlclean": "^2.7.22",
     "gulp-inject": "^4.3.2",
     "gulp-sass": "^4.0.1",
-    "browser-sync": "^2.24.4"
+    "gulp-uglify": "^3.0.0"
   },
   "scripts": {
     "start": "gulp serve"
