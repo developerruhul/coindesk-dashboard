@@ -70,7 +70,7 @@ body {
     display: initial;
     position: absolute;
     top: 3rem;
-    left: 5rem;
+    left: 3rem;
     font-size: 2rem;
     color: white;
     padding: 1rem;
@@ -81,9 +81,6 @@ body {
 
     &:active {
       box-shadow: 0 0 1rem rgba(0, 0, 0, 0.24);
-    }
-
-    &__icon {
     }
   }
 }
