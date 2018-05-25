@@ -100,20 +100,27 @@
   /*===============================================
     MOBILE MENU
   */
-  var mobileMenu = document.querySelector(".mobile-menu");
-  var sidebar = document.querySelector(".sidebar");
-  var closeSideBar = document.querySelector(".sidebar__hide");
+  var mobileMenu = document.querySelector(".mobile-menu"),
+    sidebar = document.querySelector(".sidebar-wrapper");
 
-  mobileMenu.addEventListener("click", sidebarFunc);
+  mobileMenu.addEventListener("click", function(e) {
+    e.stopPropagation();
+    // show the sidebar
+    sidebar.classList.add("active");
+    // Detect all clicks on the document
+    document.addEventListener("click", HideSidebar);
+  });
 
-  closeSideBar.addEventListener("click", sidebarFunc);
+  function HideSidebar(e) {
+    // If user clicks inside the element, do nothing
+    if (e.target.closest(".sidebar")) return;
+    sidebar.classList.remove("active");
 
-  function sidebarFunc() {
-    sidebar.classList.toggle("active");
+    // we're done, no more listening
+    document.removeEventListener("click", HideSidebar);
   }
+
   /*===============================================
     MOBILE MENU ENDS
   */
-
-
 })();

@@ -27,8 +27,36 @@ body {
   position: relative;
   flex: 0 0 24rem;
 
+  //TOGGLE SIDEBAR
   @include mq($bp-large) {
     flex: none;
+    position: static;
+
+    &.active .sidebar {
+      box-shadow: 1rem 0 3rem rgba(0, 0, 0, 0.233);
+      transform: translateX(0);
+    }
+
+    &.active::after {
+      opacity: 1;
+    }
+  }
+
+  // overlay below sidebar
+  &:after {
+    content: "";
+    position: fixed;
+    background: rgba(0, 0, 0, 0.377);
+
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+
+    opacity: 0;
+    transition: opacity 0.3s;
+    pointer-events: none;
   }
 }
 

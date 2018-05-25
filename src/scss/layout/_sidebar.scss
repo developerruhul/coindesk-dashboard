@@ -9,15 +9,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.3s all;
+  transition: 0.2s all ease-out;
+  z-index: 11;
 
   @include mq($bp-large) {
     transform: translateX(-100%);
-
-    &.active {
-      box-shadow: 1rem 0 3rem rgba(0, 0, 0, 0.233);
-      transform: translateX(0);
-    }
   }
 
   &__brand {
