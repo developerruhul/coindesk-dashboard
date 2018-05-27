@@ -82,10 +82,6 @@
       margin-top: 7rem;
       flex: 0 0 100%;
     }
-
-    @include mq(31.25em) {
-      max-width: 40rem;
-    }
   }
 
   .visa-box__title {

@@ -101,7 +101,8 @@
     MOBILE MENU
   */
   var mobileMenu = document.querySelector(".mobile-menu"),
-    sidebar = document.querySelector(".sidebar-wrapper");
+    sidebar = document.querySelector(".sidebar-wrapper"),
+    body = document.body;
 
   mobileMenu.addEventListener("click", function(e) {
     e.stopPropagation();
@@ -109,6 +110,8 @@
     sidebar.classList.add("active");
     // Detect all clicks on the document
     document.addEventListener("click", HideSidebar);
+    // disable scroll
+    body.classList.add("noscroll");
   });
 
   function HideSidebar(e) {
@@ -118,6 +121,9 @@
 
     // we're done, no more listening
     document.removeEventListener("click", HideSidebar);
+
+    // enable scroll
+    body.classList.remove("noscroll");
   }
 
   /*===============================================

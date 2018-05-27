@@ -7,9 +7,11 @@
   transition: 0.2s all ease-out;
   z-index: 11;
 
+  display: flex;
+  flex-direction: column;
+
   @include mq($bp-sidebar-hide) {
     transform: translateX(-100%);
-    overflow-y: auto;
   }
 
   &__brand {
@@ -25,15 +27,35 @@
     font-size: 1.4rem;
     font-weight: 700;
     padding-left: 2rem;
-    min-height: 100%;
   }
 
-  &__hide {
-    display: none;
+  &__footer {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.7;
+    text-align: center;
+    color: #5a5a5a;
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+    margin-top: auto;
 
-    @include mq($bp-sidebar-hide) {
-      display: initial;
-      position: absolute;
+    a {
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+
+  // for landscape devices
+  @media (max-width: $bp-sidebar-hide) and (orientation: landscape) {
+    overflow-y: auto;
+
+    &__brand {
+      min-height: 10rem;
+    }
+
+    &__nav {
+      min-height: 25rem;
+      margin-bottom: 9rem;
     }
   }
 }

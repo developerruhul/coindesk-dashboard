@@ -1,7 +1,6 @@
 .switch-button {
   @include linear($color-primary, $color-primary-dark);
   color: white;
-  font-size: 1.1rem;
   font-weight: 800;
 
   padding: 0.3rem;
@@ -13,6 +12,7 @@
   }
 
   &__label {
+    font-size: 1.1rem;
     border-radius: 100px;
     padding: 0.5rem 2.3rem;
     transition: all 0.2s;
