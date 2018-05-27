@@ -14,8 +14,12 @@
   &__label {
     font-size: 1.1rem;
     border-radius: 100px;
-    padding: 0.5rem 2.3rem;
+    padding: 0.6rem 2.3rem;
     transition: all 0.2s;
+
+    @media (max-width: 25.875em) {
+      font-size: 1.2rem;
+    }
   }
 
   &__input:checked + label {
