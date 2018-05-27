@@ -27,9 +27,9 @@ html {
     font-size: 54%;
   }
 
-  // @include mq(huge) {
-  //   font-size: 75%;
-  // }
+  @media (min-width: $bp-largest) {
+    font-size: 75%;
+  }
 }
 
 body {
