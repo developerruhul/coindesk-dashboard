@@ -8,12 +8,12 @@
   background-position: 0px 84px, 0 0;
 
   &--bitcoin {
-    background-image: url(../images/png/bitcoin-share.png),
+    background-image: url("../images/png/bitcoin-share.png"),
       linear-gradient(to top, $color-secondary, white 35%);
   }
 
   &--etherum {
-    background-image: url(../images/png/etherum-share.png),
+    background-image: url("../images/png/etherum-share.png"),
       linear-gradient(to top, $color-primary, white 35%);
   }
 

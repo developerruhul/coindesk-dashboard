@@ -12,3 +12,5 @@ dist
 tmp
 src/**/*.css
 .vscode
+
+.cache

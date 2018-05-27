@@ -8,17 +8,16 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "browser-sync": "^2.24.4",
-    "del": "^3.0.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-clean-css": "^3.9.4",
-    "gulp-htmlclean": "^2.7.22",
-    "gulp-inject": "^4.3.2",
-    "gulp-sass": "^4.0.1",
-    "gulp-uglify": "^3.0.0"
+    "autoprefixer": "^8.5.1",
+    "babel-preset-env": "^1.7.0",
+    "node-sass": "^4.9.0",
+    "parcel": "^1.8.1"
   },
   "scripts": {
-    "start": "gulp serve"
+    "start": "parcel ./src/index.html"
+  },
+  "dependencies": {
+    "chart.js": "^2.7.2",
+    "svgxuse": "^1.2.6"
   }
 }
