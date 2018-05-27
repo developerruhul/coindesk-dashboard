@@ -1,4 +1,3 @@
-import Chart from "chart.js";
 import "svgxuse";
 import "./element.closest";
 import "./chart";
