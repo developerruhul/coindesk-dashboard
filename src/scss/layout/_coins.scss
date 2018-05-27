@@ -14,7 +14,6 @@
   &__logo-box {
     width: 100%;
     margin-top: 4rem;
-    margin-bottom: 2rem;
     display: flex;
   }
 
@@ -22,17 +21,15 @@
     display: flex;
     width: 100%;
     align-items: center;
-  }
+    margin-top: 4rem;
 
-  .share-card {
-    width: 32%;
-    height: 20rem;
-    align-items: flex-start;
-    display: flex;
+    @include mq($bp-stock-cards) {
+      flex-wrap: wrap;
+    }
 
-    &:nth-child(2) {
-      margin-left: 1%;
-      margin-right: auto;
+    @include mq($bp-stock-cards-small) {
+      justify-content: center;
+      margin-top: 10rem;
     }
   }
 
@@ -44,10 +41,51 @@
     padding: 2rem;
   }
 
+  .share-card {
+    height: 20rem;
+    align-items: flex-start;
+    display: flex;
+    max-width: 40rem;
+    flex: 0 0 32%;
+
+    @include mq($bp-stock-cards) {
+      flex: 0 0 48%;
+    }
+    @include mq($bp-stock-cards-small) {
+      flex: 0 0 100%;
+      height: 22rem;
+    }
+
+    &:nth-child(2) {
+      margin-left: 1%;
+      margin-right: auto;
+
+      @include mq($bp-stock-cards) {
+        margin-left: 4%;
+      }
+      @include mq($bp-stock-cards-small) {
+        margin-top: 3rem;
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+
   .share-box__visa-box {
-    width: 32%;
+    flex: 0 0 32%;
     height: auto;
     margin-top: -5rem;
+    max-width: 36rem;
+
+    @include mq($bp-stock-cards) {
+      flex-wrap: wrap;
+      margin-top: 7rem;
+      flex: 0 0 100%;
+    }
+
+    @include mq(31.25em) {
+      max-width: 40rem;
+    }
   }
 
   .visa-box__title {

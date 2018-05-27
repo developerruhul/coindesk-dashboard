@@ -1,8 +1,7 @@
 .sidebar {
-  height: 100%;
+  min-height: 100vh;
   width: 24rem;
   position: fixed;
-
   background-color: $color-sidebar;
   border-right: 1px solid #e8e8e8;
 
@@ -12,8 +11,9 @@
   transition: 0.2s all ease-out;
   z-index: 11;
 
-  @include mq($bp-large) {
+  @include mq($bp-sidebar-hide) {
     transform: translateX(-100%);
+    overflow: scroll;
   }
 
   &__brand {
@@ -32,7 +32,7 @@
   &__hide {
     display: none;
 
-    @include mq($bp-large) {
+    @include mq($bp-sidebar-hide) {
       display: initial;
       position: absolute;
     }

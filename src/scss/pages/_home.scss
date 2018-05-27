@@ -8,18 +8,14 @@ body {
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
-
   padding: 4rem 3.5rem 10rem;
-  display: flex;
-  align-content: space-between;
-  flex-wrap: wrap;
 
-  & > * {
-    flex: 0 0 100%;
+  @include mq($bp-sidebar-hide) {
+    padding: 13rem 3rem 10rem;
   }
 
-  @include mq($bp-large) {
-    padding: 13rem 3rem 10rem;
+  @include mq($bp-smallest) {
+    padding: 13rem 1rem 10rem;
   }
 }
 
@@ -28,7 +24,7 @@ body {
   flex: 0 0 24rem;
 
   //TOGGLE SIDEBAR
-  @include mq($bp-large) {
+  @include mq($bp-sidebar-hide) {
     flex: none;
     position: static;
 
@@ -66,13 +62,11 @@ body {
 .mobile-menu {
   display: none;
 
-  @include mq($bp-large) {
+  @include mq($bp-sidebar-hide) {
     display: initial;
     position: absolute;
     top: 3rem;
     left: 3rem;
-    font-size: 2rem;
-    color: white;
     padding: 1rem;
 
     cursor: pointer; //TODO: change this in touchscreen
@@ -82,5 +76,10 @@ body {
     &:active {
       box-shadow: 0 0 1rem rgba(0, 0, 0, 0.24);
     }
+  }
+
+  &__icon {
+    font-size: 2rem;
+    color: white;
   }
 }

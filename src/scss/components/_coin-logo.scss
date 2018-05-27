@@ -13,6 +13,9 @@
 
     &:not(:first-child) {
       margin-left: 2rem;
+      @include mq(31.25em) {
+        margin-left: 1rem;
+      }
     }
 
     &--bitcoin {

@@ -19,13 +19,13 @@ html {
   // this defines the size of 1rem
   font-size: 62.5%;
 
-  // @include mq(tab-l) {
-  //   font-size: 56.25%;
-  // }
+  @include mq($bp-stock-cards) {
+    font-size: 59%;
+  }
 
-  // @include mq(tab-p) {
-  //   font-size: 50%;
-  // }
+  @include mq(37.5em) {
+    font-size: 54%;
+  }
 
   // @include mq(huge) {
   //   font-size: 75%;

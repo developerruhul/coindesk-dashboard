@@ -5,20 +5,30 @@
   display: flex;
   justify-content: space-between;
   align-items: stretch;
+  flex-wrap: wrap;
+
+  @include mq($bp-task) {
+    & > * {
+      width: 100% !important;
+    }
+    margin-top: 10rem;
+  }
 
   &__operations {
     width: 34%;
+  }
+
+  &__statistics {
+    width: 63%;
+
+    @include mq($bp-task) {
+      margin-top: 5rem;
+    }
   }
 
   &__title {
     font-size: 1.5rem;
     font-weight: 800;
     color: $color-text-primary;
-  }
-
-  &__statistics {
-    width: 63%;
-    display: flex;
-    flex-direction: column;
   }
 }
