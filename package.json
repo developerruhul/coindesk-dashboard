@@ -14,7 +14,8 @@
     "parcel": "^1.8.1"
   },
   "scripts": {
-    "start": "parcel ./src/index.html"
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
   },
   "dependencies": {
     "chart.js": "^2.7.2",
