@@ -1,32 +1,31 @@
 .sidebar {
-  min-height: 100vh;
+  height: 100vh;
   width: 24rem;
   position: fixed;
   background-color: $color-sidebar;
   border-right: 1px solid #e8e8e8;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   transition: 0.2s all ease-out;
   z-index: 11;
 
   @include mq($bp-sidebar-hide) {
     transform: translateX(-100%);
-    overflow: scroll;
+    overflow-y: auto;
   }
 
   &__brand {
     margin-top: 4.5rem;
     margin-bottom: 9rem;
     text-decoration: none;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__nav {
     font-size: 1.4rem;
     font-weight: 700;
     padding-left: 2rem;
+    min-height: 100%;
   }
 
   &__hide {
