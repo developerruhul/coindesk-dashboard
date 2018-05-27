@@ -11,11 +11,7 @@ Follow these simple steps to have a copy of the project in your local machine.
 
 ### Prerequisites
 
-You should already have **node.js** running in your machine. The project uses **gulp** task runner. You need **gulp-cli** globally installed to use gulp. To install it run =>
-
-```
-yarn global add gulp-cli
-```
+You should already have **node.js** running in your machine.
 
 ### Installing
 To have a copy of the project, clone the repo or download the zip file.
@@ -32,7 +28,7 @@ cd coindesk && yarn install
 
 And  then run
 ```
-gulp
+yarn run start
 ```
 
 The server should start on port 3000. [localhost](http://localhost:3000)
