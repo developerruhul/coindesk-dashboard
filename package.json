@@ -3,20 +3,23 @@
   "version": "0.1",
   "description": "a fiction coin-dashboard app",
   "main": "index.html",
-  "repository": "https://iamruhul.github.io/dashboard",
-  "author": "iamruhul <ruhulamin3482@gmail.com>",
+  "homepage": "https://ruhulwebdev.github.io/coindesk/",
+  "repository": "https://github.com/ruhulwebdev/coindesk",
+  "author": "ruhulwebdev <ruhulamin.webdev@gmail.com>",
   "license": "MIT",
   "private": false,
   "devDependencies": {
     "autoprefixer": "^9.4.10",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "parcel": "^1.12.1"
   },
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html"
+    "build": "parcel build ./src/index.html --public-url /coindesk/",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "chart.js": "^2.7.3",
