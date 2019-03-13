@@ -8,17 +8,18 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "autoprefixer": "^8.5.1",
+    "autoprefixer": "^9.4.10",
+    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "node-sass": "^4.9.0",
-    "parcel": "^1.8.1"
+    "node-sass": "^4.11.0",
+    "parcel": "^1.12.1"
   },
   "scripts": {
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html"
   },
   "dependencies": {
-    "chart.js": "^2.7.2",
+    "chart.js": "^2.7.3",
     "svgxuse": "^1.2.6"
   }
 }
