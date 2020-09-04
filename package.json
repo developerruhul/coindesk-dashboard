@@ -13,7 +13,7 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "parcel": "^1.12.1"
   },
   "scripts": {
