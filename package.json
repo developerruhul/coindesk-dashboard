@@ -17,8 +17,7 @@
   },
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --public-url /coindesk/",
-    "deploy": "gh-pages -d dist"
+    "build": "parcel build ./src/index.html",
   },
   "dependencies": {
     "chart.js": "^2.7.3",
