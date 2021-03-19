@@ -1,20 +1,19 @@
 {
-  "name": "coin-dashboard",
-  "version": "0.1",
-  "description": "a fiction coin-dashboard app",
-  "main": "index.html",
-  "homepage": "https://ruhulwebdev.github.io/coindesk/",
-  "repository": "https://github.com/ruhulwebdev/coindesk",
-  "author": "ruhulwebdev <ruhulamin.webdev@gmail.com>",
+  "name": "coindesk-dashboard",
+  "version": "0.0.1",
+  "description": "A fictional dashboard for coindesk",
+  "homepage": "https://coindesk-dashboard.netlify.app",
+  "repository": "https://github.com/developerruhul/coindesk-dashboard",
+  "author": "Developer Ruhul <ruhulamin.webdev@gmail.com>",
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "autoprefixer": "^9.4.10",
+    "autoprefixer": "^10.2.5",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.11.0",
-    "parcel": "^1.12.1"
+    "parcel": "^1.12.1",
+    "postcss": "^8.1.0",
+    "sass": "^1.32.8"
   },
   "scripts": {
     "start": "parcel ./src/index.html",
