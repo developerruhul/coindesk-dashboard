@@ -20,7 +20,7 @@
     "build": "parcel build ./src/index.html"
   },
   "dependencies": {
-    "chart.js": "^2.7.3",
+    "chart.js": "^2.9.4",
     "svgxuse": "^1.2.6"
   }
 }
